@@ -22,7 +22,7 @@ jobs:
           port: 7022
 
           script: |
-            cd /opt || exit 1
+            cd /root || exit 1
 
             if [ ! -d "brims" ]; then
               git clone https://github.com/Hi-ideals/Brims_2026.git brims
