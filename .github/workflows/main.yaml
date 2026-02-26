@@ -19,6 +19,7 @@ jobs:
           host: ${{ secrets.E2E_HOST }}
           username: ${{ secrets.E2E_USER }}
           key: ${{ secrets.E2E_SSH_KEY }}
+          port: 7022
 
           script: |
             cd /opt || exit 1
