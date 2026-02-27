@@ -1,7 +1,7 @@
 services:
-  2brimsweb:
+  brimsweb:
     build: .
-    container_name: brimsweb2
+    container_name: brimsweb
     ports:
-      - "9116:80"
+      - "9115:80"
     restart: always
