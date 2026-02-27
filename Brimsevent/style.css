@@ -15,20 +15,6 @@
 } 
 
 
-/* body {
-  font-family: 'Outfit', sans-serif;
-  color: #fff;
-
-  background-image: url("./images/bg.png"); 
-  background-size: cover;          
-  background-position: center;  
-  background-repeat: no-repeat;    
-  background-attachment: fixed;  
-  min-height: 100vh;
-}  */
-
-
-
 /* Animated Background */
 @keyframes gradientBG{
   0%{background-position:0% 50%;}
@@ -73,10 +59,56 @@
 
 
 
+/* Event Info */
+
+.event-info {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 25px;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.event-item {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 22px;
+  color: #d6f607;
+  font-weight: 600;
+}
+
+.event-item i {
+  font-size: 26px;
+  color: #ffffff;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+  .event-info {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .event-item {
+    font-size: 18px;
+  }
+
+  .event-item i {
+    font-size: 22px;
+  }
+}
+
+/* Event Info */
+
+
+
 /* ===== HERO ===== */
 .hero{
   text-align:center;
-  padding:50px 10px 50px;
+  padding:0px 10px 50px;
 }
 
 .sub-title{
@@ -136,7 +168,7 @@
 }
 
 /* ===== BUTTON ===== */
-.btn{
+.btn2{
   display:inline-block;
   margin-top:35px;
   padding:25px 65px;
@@ -179,16 +211,17 @@
   padding:20px 20px;
   display:flex;
   justify-content:center;
-  gap:40px;
+  /* gap:40px; */
+  margin-top: -50px;
   flex-wrap:wrap;
 }
 
 .card{
   background:rgba(255,255,255,0.08);
   backdrop-filter:blur(20px);
-  padding:30px;
+  padding:10px;
   border-radius:25px;
-  width:420px;
+  width:620px;
   text-align:center;
   box-shadow:0 15px 35px rgba(0,0,0,0.5);
   transition:0.4s ease;
@@ -200,7 +233,7 @@
   backdrop-filter:blur(20px);
   padding:30px;
   border-radius:25px;
-  width:420px;
+  width:20px;
   text-align:center;
   /* box-shadow:0 15px 35px rgba(0,0,0,0.5); */
   transition:0.4s ease;
@@ -317,60 +350,108 @@
 
   /* ===== Registration Fees Section ===== */
 
-.fees-section{
-  padding:5px 5px;
-  text-align:center;
+.fees-section {
+  padding: 20px;
+  text-align: center;
+  background: linear-gradient(135deg, #0c2e54, #15457a);
 }
 
-.fees-title{
-  font-size:40px;
-  margin-bottom:40px;
-  background:linear-gradient(90deg,#00f5a0,#cfb0eb,#00d9f5);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:rgb(132, 252, 220);
+.fees-title {
+  font-size: 34px;
+  margin-bottom: 15px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
 }
 
-.fees-container{
-  display:flex;
-  justify-content:center;
-  gap:40px;
-  flex-wrap:wrap;
+/* Container */
+.fees-container {
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+  flex-wrap: nowrap;
 }
 
-.fee-card{
-  background:rgba(255,255,255,0.08);
-  backdrop-filter:blur(20px);
-  padding:40px;
-  border-radius:25px;
-  width:300px;
-box-shadow:0 15px 35px rgba(0,0,0,0.5);
-  transition:0.4s ease;
+/* Card */
+.fee-card {
+  background: #ffffff;
+  border-radius: 12px;
+  width: 180px;             
+  /* padding: 20px 15px;     */
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  transition: all 0.3s ease;
+  border-top: 4px solid #e1f40d;  /* Premium top border */
 }
 
-.fee-card:hover{
-  transform:translateY(-10px);
- box-shadow:0 15px 40px rgba(168,85,247,0.6);
+.fee-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.25);
 }
 
-.fee-card h3{
-  font-size:22px;
-  margin-bottom:20px;
-  font-weight:600;
+/* Heading */
+.fee-card h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+  color: #0c2e54;
+  font-weight: 600;
 }
 
-.price{
-  font-size:36px;
-  font-weight:700;
-  color:#00f5a0;
+/* Price */
+.price {
+  font-size: 20px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #000000;
 }
 
-/* Responsive */
-@media(max-width:768px){
-  .fees-title{
-    font-size:28px;
+/* Optional small text */
+.fee-card p {
+  font-size: 12px;
+  margin-bottom: 12px;
+  color: #555;
+}
+
+/* Button */
+.button-animate {
+  display: inline-block;
+  padding: 8px 16px;     /* Smaller button */
+  font-size: 13px;
+  background: linear-gradient(90deg, #e1f40d, #d1e307);
+  color: #000;
+  text-decoration: none;
+  font-weight: 600;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.button-animate:hover {
+  background: #0c2e54;
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Small screen */
+@media (max-width: 480px) {
+  .fee-card {
+    width: 46%;
+    padding: 18px 10px;
+  }
+
+  .fees-container {
+    gap: 12px;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fees-title {
+    font-size: 26px;
   }
 }
+
   /* ===== Registration Fees Section ===== */
+
+
+
 
 .footer {
   background-color: #2c3e50;
@@ -378,6 +459,8 @@ box-shadow:0 15px 35px rgba(0,0,0,0.5);
   padding: 20px 0;
   text-align: center;
 }
+
+
 
 
 /* ===== RESPONSIVE ===== */
@@ -399,9 +482,8 @@ box-shadow:0 15px 35px rgba(0,0,0,0.5);
   }
 }
 
-
-
  /* <!-- National Office Bearers--> */
+
 /* Section Background */
 .office-section {
   padding: 80px 20px;
@@ -488,6 +570,7 @@ box-shadow:0 15px 35px rgba(0,0,0,0.5);
 
 
  /* <!-- National Organising Committee--> */
+
 /* Section Background */
 .office-section2 {
   padding: 80px 20px;
@@ -565,13 +648,11 @@ box-shadow:0 15px 35px rgba(0,0,0,0.5);
  /* <!-- National Organising Committee--> */
 
 
-
-
   /* <!-- Programme Schedule--> */
 /* Section Background */
 .office-section3 {
   padding: 80px 20px;
-  background: linear-gradient(-45deg,#a42eed,#07422d,#045b11,#1f1c2c);
+  background: linear-gradient(-45deg,#a42eed,#0aaedb,#3181eb,#1f1c2c);
   background-size: 300% 300%;
   animation: gradientMove 8s ease infinite;
   text-align: center;
@@ -617,28 +698,38 @@ box-shadow:0 15px 35px rgba(0,0,0,0.5);
 
 
 /* Button BADGE */
-  .kmc-badge {
-  width: 180px;
-  height: 180px;
-  border-radius: 40%;
-  background: radial-gradient(circle, #196e7f, #510550);
+  .button-animate {
+  width: 200px;
+  height: 50px;
+   border-radius:50px;
+  background: radial-gradient(circle, #f58402, #f87603);
   display: flex;
   align-items: center;
+  text-decoration: none;
   justify-content: center;
   text-align: center;
   font-weight: bold;
-  font-size: 22px;
-  color: #fff;
-  box-shadow: 0 0 20px rgba(255, 136, 0, 0.7);
-  animation: glowBlink 1.5s infinite alternate;
-  margin: 30px auto;
+  font-size: 18px;
+  color: #ffffff;
+  box-shadow: 0 0 20px rgba(64, 5, 141, 0.7);
+  animation: btnBlink 1.5s infinite alternate;
+  margin: 15px auto;
   position: relative;
 }
 
-
-
-
-
+/* Blinking Glow Animation */
+@keyframes btnBlink {
+  0% {
+    box-shadow: 0 0 10px rgba(22, 108, 178, 0.6),
+                0 0 20px rgba(120, 127, 28, 0.6);
+    transform: scale(0.9);
+  }
+  100% {
+    box-shadow: 0 0 25px rgb(30, 144, 150),
+                0 0 40px rgba(105, 59, 59, 0.9);
+    transform: scale(1.05);
+  }
+}
 
 
 /* KMC BADGE */
