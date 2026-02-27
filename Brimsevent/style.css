@@ -616,6 +616,31 @@ box-shadow:0 15px 35px rgba(0,0,0,0.5);
   /* <!-- Programme Schedule--> */
 
 
+/* Button BADGE */
+  .kmc-badge {
+  width: 180px;
+  height: 180px;
+  border-radius: 40%;
+  background: radial-gradient(circle, #196e7f, #510550);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(255, 136, 0, 0.7);
+  animation: glowBlink 1.5s infinite alternate;
+  margin: 30px auto;
+  position: relative;
+}
+
+
+
+
+
+
+
 /* KMC BADGE */
   .kmc-badge {
   width: 180px;
