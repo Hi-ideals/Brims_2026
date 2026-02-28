@@ -25,7 +25,7 @@ jobs:
             cd /root/workspace || exit 1
 
             if [ ! -d "brims" ]; then
-              git clone git@github.com:Hi-ideals/Brims_2026.git brims
+              git clone git@github.com-brims:Hi-ideals/Brims_2026.git brims
             fi
 
             cd brims
