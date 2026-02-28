@@ -14,7 +14,6 @@
   animation:gradientBG 12s ease infinite;
 } 
 
-
 /* Animated Background */
 @keyframes gradientBG{
   0%{background-position:0% 50%;}
@@ -56,11 +55,10 @@
   transform:scale(1.1) rotate(6deg);
   box-shadow:0 15px 40px rgba(168,85,247,0.6);
 }
-
+/* ===== LOGO SECTION ===== */
 
 
 /* Event Info */
-
 .event-info {
   display: flex;
   justify-content: center;
@@ -70,7 +68,6 @@
   margin-top: 20px;
   text-align: center;
 }
-
 .event-item {
   display: flex;
   align-items: center;
@@ -79,7 +76,6 @@
   color: #d6f607;
   font-weight: 600;
 }
-
 .event-item i {
   font-size: 26px;
   color: #ffffff;
@@ -142,8 +138,6 @@
   text-shadow: 0 5px 20px rgba(0, 114, 255, 0.4);
 }
 
-
-
 .main-title sup {
   font-size: 55%;
   vertical-align: super;
@@ -151,8 +145,6 @@
   background: linear-gradient(90deg,#e1f40d,#d1e307,#ffffff);
   -webkit-background-clip: text;
 }
-
-
 
 .event-name{
   font-size:26px;
@@ -166,6 +158,9 @@
   margin-top:5px;
   font-weight:500;
 }
+
+/* ===== HERO ===== */
+
 
 /* ===== BUTTON ===== */
 .btn2{
@@ -205,6 +200,8 @@
   transform:scale(1.08);
   box-shadow:0 10px 30px rgba(168,85,247,0.6);
 }
+/* ===== BUTTON ===== */
+
 
 /* ===== GLASS CARDS ===== */
 .section{
@@ -259,6 +256,7 @@
   width: 100%;
   overflow: hidden;
 }
+/* ===== GLASS CARDS ===== */
 
 /* Banner Image */
 .banner-img {
@@ -271,7 +269,6 @@
 
 
 /* Event Details Section Start*/ 
-
 .event-details {
   padding: 50px 0;
   background: linear-gradient(135deg, #232222, #5f0a01); 
@@ -297,6 +294,8 @@
   0% { transform: translateX(-200%) skewX(-25deg); }
   100% { transform: translateX(200%) skewX(-25deg); }
 }
+/* Event Details Section Start*/ 
+
 
 /* Medals Section */ 
 .hero-medals .medal-img {
@@ -451,16 +450,12 @@
   /* ===== Registration Fees Section ===== */
 
 
-
-
 .footer {
-  background-color: #2c3e50;
+  background-color: #000000;
   color: white;
   padding: 20px 0;
   text-align: center;
 }
-
-
 
 
 /* ===== RESPONSIVE ===== */
@@ -486,8 +481,9 @@
 
 /* Section Background */
 .office-section {
-  padding: 80px 20px;
-  background: linear-gradient(-45deg,#0f0c29,#302b63,#24243e,#1f1c2c);
+  padding: 30px 15px;
+  /* background: linear-gradient(-45deg,#0f0c29,#302b63,#24243e,#1f1c2c); */
+  background-color: #0c2e54;
   background-size: 300% 300%;
   animation: gradientMove 8s ease infinite;
   text-align: center;
@@ -573,8 +569,9 @@
 
 /* Section Background */
 .office-section2 {
-  padding: 80px 20px;
-  background: linear-gradient(-45deg,#d51706,#cc7511,#24243e,#1f1c2c);
+  padding: 30px 15px;
+  /* background: linear-gradient(-45deg,#d51706,#cc7511,#24243e,#1f1c2c); */
+  background-color: #0c2e54;
   background-size: 300% 300%;
   animation: gradientMove 8s ease infinite;
   text-align: center;
@@ -592,7 +589,7 @@
   font-size: 45px;
   font-weight: 700;
   letter-spacing: 1px;
-  margin-bottom: 15px;
+  margin-bottom: 5px;
   text-transform: uppercase;
 }
 
@@ -636,7 +633,7 @@
 /* Responsive */
 @media (max-width: 768px) {
   .office-title2 {
-    font-size: 28px;
+    font-size: 22px;
   }
 
   .office-subtitle2 {
@@ -651,8 +648,9 @@
   /* <!-- Programme Schedule--> */
 /* Section Background */
 .office-section3 {
-  padding: 80px 20px;
-  background: linear-gradient(-45deg,#a42eed,#0aaedb,#3181eb,#1f1c2c);
+  padding: 30px 15px;
+  /* background: linear-gradient(-45deg,#a42eed,#8119cc,#e027e0,#1f1c2c); */
+  background-color: #0c2e54;
   background-size: 300% 300%;
   animation: gradientMove 8s ease infinite;
   text-align: center;
