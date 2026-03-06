@@ -479,7 +479,7 @@
 
 .social-icons{
     display:flex;
-    gap:15px;
+    gap:30px;
 }
 
 .social-icons a{
@@ -837,6 +837,63 @@
 
 /* ---------- */
 
+
+
+
+/* KMC BADGE */
+  .pg-badge {
+  width: 350px;
+  border-radius: 15%;
+  background-color: #872004;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-weight: bold;
+  font-size: 20px;
+  color: #fff;
+  box-shadow: 0 0 20px rgba(251, 85, 2, 0.7);
+  animation: glowBlinkpg 1.5s infinite alternate;
+  margin: 30px auto;
+  position: relative;
+}
+
+/* Blinking Glow Animation */
+@keyframes glowBlinkpg {
+  0% {
+    box-shadow: 0 0 10px rgba(224, 91, 2, 0.932),
+                0 0 20px rgba(255, 0, 0, 0.6);
+    transform: scale(1);
+  }
+  100% {
+    box-shadow: 0 0 25px rgb(220, 75, 3),
+                0 0 40px rgba(255, 255, 255, 0.9);
+    transform: scale(1.05);
+  }
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pg-badge{
+    width: 350px;
+    /* height: 100px; */
+    /* font-size: 16px; */
+  }
+}
+
+
+/* ---------- */
+
+
+
+
+
+
+
+
+
+
+
 /* Countdown Section */
 .countdown-section {
   background-color: #0c2e54;
@@ -1116,3 +1173,21 @@
 }
 
 /* Cards Scrolling Section  */
+
+/* Pg Free Accomodation highlight */
+/* .highlight-blink{
+    background-color: yellow;
+    color: red;
+    font-weight: bold;
+    padding: 5px 10px;
+    display: inline-block;
+    animation: blink 1s infinite;
+}
+
+@keyframes blink{
+    0%{opacity:1;}
+    50%{opacity:0.3;}
+    100%{opacity:1;}
+} */
+
+/* Pg Free Accomodation highlight */
